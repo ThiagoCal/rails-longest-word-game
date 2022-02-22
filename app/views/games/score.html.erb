@@ -1,0 +1,13 @@
+<h2>Your score:</h2>
+
+<p>
+  <%if @included %>
+    <%if @english_word %>
+      <p>Congratulations! This word is valid english word</p>
+    <% else %>
+      <p>Sorry, but this is not an english word</p>
+    <%end%>
+  <% else %>
+    <p>Sorry, this word can not be built out of the given letters</p>
+  <%end%>
+</p>
